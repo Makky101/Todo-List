@@ -2,8 +2,7 @@ body{
   font-family: Arial;
 }
 
-.todo-list-output,
-.todoList-inputs{
+.todo-list-output{
   display: grid;
   grid-template-columns: 200px 150px 100px;
   column-gap: 10px;
@@ -11,8 +10,14 @@ body{
   align-items: center;
 }
 
+/*I have to separate it so I can add the delete all button to work 😉*/
 .todoList-inputs{
   margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 200px 150px 100px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
 }
 
 .name-input,
